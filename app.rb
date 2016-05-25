@@ -2,7 +2,8 @@ require 'sinatra'
 require 'pp'
 set :port,8000
 
-client_secret = 'kFqjw1uDWlPyylpRHqkxw6q9'
+google_client_secret = 'kFqjw1uDWlPyylpRHqkxw6q9'
+microsoft_client_secret = 'w7eVAXsZoTDyyAaheO4Hi8E'
 
 configure do
   mime_type :js, 'text/javascript'

@@ -23,11 +23,19 @@ hello.on('auth.login', function(auth) {
 });
             
 hello.init({
-	google: '515299426248-r1k963jq4qqgapcaoiemouormb87e1or.apps.googleusercontent.com'
+	google: '515299426248-r1k963jq4qqgapcaoiemouormb87e1or.apps.googleusercontent.com',
+    windows: '0a6668d3-004d-4424-8120-a56dcb599bb9'
 }, {redirect_uri: 'redirect' /*, response_type: 'code'*/});
         </script>
-        <a href='/' onclick="hello('google').login()">Login</a>
-        <a href='/' onclick="hello('google').logout()">Logout</a>
+        <p>
+        <a href='/' onclick="hello('google').login()">Login Google</a>
+        <a href='/' onclick="hello('google').logout()">Logout Google</a>
         <div id="profile_google"></div>
+        </p>
+        <p>
+        <a href='/' onclick="hello('windows').login()">Login Microsoft</a>
+        <a href='/' onclick="hello('windows').logout()">Logout Microsoft</a>
+        <div id="profile_windows"></div>
+        </p>
     </body>
 </html>
